@@ -5,4 +5,7 @@ def login(username, password):
     else:
         return "Invalid credentials"
 
+def logout():
+    return "Logout successful"
+
 print("Hello, Git!")
