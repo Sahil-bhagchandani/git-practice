@@ -1,0 +1,20 @@
+{
+  "name": "git-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahil-bhagchandani/git-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahil-bhagchandani/git-practice/issues"
+  },
+  "homepage": "https://github.com/Sahil-bhagchandani/git-practice#readme",
+  "description": ""
+}
