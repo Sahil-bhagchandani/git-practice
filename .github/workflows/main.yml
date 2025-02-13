@@ -1,0 +1,37 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - master  # or any branch you're working on
+  pull_request:
+    branches:
+      - master  # or any branch you're working on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the code from the repo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Set up Node.js (even if you don't have actual dependencies)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # You can adjust this as needed
+
+      # 3. Install dependencies (simulated; npm install will run even if no dependencies exist)
+      - name: Install dependencies
+        run: |
+          echo "No dependencies, skipping install"
+        
+      # 4. Build your project (no actual build but simulate with a command)
+      - name: Build project
+        run: echo "Building project... (pseudo work)"
+
+      # 5. Simulate running tests (no actual tests but echo as a placeholder)
+      - name: Run tests
+        run: echo "Running tests... (pseudo work)"
